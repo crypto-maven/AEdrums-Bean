@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Company Name - Contact</title>
+		<link rel="stylesheet" href="css/bulma.css">
+		<script defer src="js/fontawesome-all.min.js"></script>
+		<style type="text/css">
+			select,
+			.select {
+				width: 100%;
+			}
+			iframe {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="index.html" class="navbar-item">Company Name</a>
+					<button class="button navbar-burger" data-target="navMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="navbar-menu" id="navMenu">
+					<div class="navbar-start">
+						<a href="index.html" class="navbar-item">Home</a>
+						<a href="services.html" class="navbar-item">Services</a>
+						<a href="about.html" class="navbar-item">About</a>
+						<a href="team.html" class="navbar-item">Team</a>
+						<a href="contact.html" class="navbar-item">Contact</a>
+					</div>
+					<div class="navbar-end">
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a href="#0" class="navbar-link">Language</a>
+							<div class="navbar-dropdown is-boxed">
+								<a href="https://companyname.com/language" class="navbar-item">Language</a>
+								<a href="https://companyname.com/language" class="navbar-item">Language</a>
+								<a href="https://companyname.com/language" class="navbar-item">Language</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="section">
+			<div class="container">
+				<h2 class="title is-1 has-text-centered">Contact</h2>
+				<div class="columns is-tablet">
+					<div class="column">
+						<h4 class="title">Address:</h4>
+						<address>
+							<strong>Company Name</strong><br>
+							Street Name<br>
+							ZIP code and city<br>
+							<i class="fas fa-fw fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a><br>
+							<i class="fas fa-fw fa-envelope"></i> <a href="mailto:info@domain.com">info@domain.com</a>
+						</address>
+					</div>
+					<div class="column">
+						<h4 class="title">Opening hours:</h4>
+						<p>
+							Monday-Thursday: 10 am - 6 pm<br>
+							Friday-Saturday: 10 am - 10 pm<br>
+							Sunday: 10 am - 8 pm<br>
+						</p>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="column">
+						<h4 class="title">Send us a message:</h4>
+						<form>
+							<div class="columns">
+								<div class="column">
+									<div class="field">
+										<label class="label" for="name">Name:</label>
+										<div class="control has-icons-left">
+											<input type="text" id="name" class="input" placeholder="Firstname Lastname" required>
+											<span class="icon is-small is-left">
+												<i class="fas fa-user"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="field">
+										<label class="label" for="email">Email:</label>
+										<div class="control has-icons-left">
+											<input type="email" id="email" class="input" placeholder="example@email.com" required>
+											<span class="icon is-small is-left">
+												<i class="fas fa-envelope"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns">
+								<div class="column">
+									<div class="field">
+										<label class="label" for="telephone">Telephone:</label>
+										<div class="control has-icons-left">
+											<input type="tel" id="telephone" class="input" placeholder="0123456789">
+											<span class="icon is-small is-left">
+												<i class="fas fa-phone"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="field">
+										<label class="label" for="select">Department:</label>
+										<div class="control has-icons-left">
+											<div class="select">
+												<select id="select" aria-describedby="select-helpBlock" required>
+													<option value="">- select here -</option>
+													<option value="business">Business</option>
+													<option value="sale">Sale</option>
+													<option value="support">Support</option>
+												</select>
+											</div>
+											<span class="icon is-small is-left">
+												<i class="fas fa-home"></i>
+											</span>
+										</div>
+										<small id="select-helpBlock" class="form-text">Please select the recipient of your message.</small>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label class="label" for="textarea">Message:</label>
+								<div class="control">
+									<textarea id="textarea" class="textarea" rows="5" placeholder="Write your message here..." required></textarea>
+								</div>
+							</div>
+							<button type="submit" class="button is-primary">Submit</button>
+							<button type="reset" class="button">Reset</button>
+						</form>
+					</div>
+					<div class="column">
+						<h4 class="title">Where to find us:</h4>
+						<figure class="image is-4by3">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175453420647!2d-73.98784413479707!3d40.748440379327945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire+State+Building%2C+350+5th+Ave%2C+New+York%2C+NY+10118%2C+USA!5e0!3m2!1sda!2sdk!4v1491841211721" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="columns is-mobile is-multiline">
+					<div class="column is-half-mobile is-one-quarter-desktop">
+						<h6 class="title is-5">Quick links</h6>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="column is-half-mobile is-one-quarter-desktop">
+						<h6 class="title is-5">Information</h6>
+						<ul>
+							<li><a href="#0">Legal information</a></li>
+							<li><a href="#0">Job opportunities</a></li>
+							<li><a href="#0">Frequently Asked Questions</a></li>
+						</ul>
+					</div>
+					<div class="column is-half-mobile is-one-quarter-desktop">
+						<h6 class="title is-5">Follow us</h6>
+						<ul>
+							<li><a href="#0"><i class="fab fa-fw fa-facebook"></i> Facebook</a></li>
+							<li><a href="#0"><i class="fab fa-fw fa-instagram"></i> Instagram</a></li>
+							<li><a href="#0"><i class="fab fa-fw fa-twitter"></i> Twitter</a></li>
+							<li><a href="#0"><i class="fab fa-fw fa-youtube"></i> YouTube</a></li>
+							<li><a href="#0"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a></li>
+						</ul>
+					</div>
+					<div class="column is-half-mobile is-one-quarter-desktop">
+						<h6 class="title is-5">Our location:</h6>
+						<address>
+							<strong>Company Name</strong><br>
+							Steet Name<br>
+							ZIP code and city<br>
+							<i class="fas fa-fw fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a><br>
+							<i class="fas fa-fw fa-envelope"></i> <a href="mailto:info@domain.com">info@domain.com</a>
+						</address>
+					</div>
+				</div>
+				<p class="has-text-centered">&copy; 2017 Company Name. All rights reserved.</p>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+
+				// Get all "navbar-burger" elements
+				var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+				// Check if there are any navbar burgers
+				if ($navbarBurgers.length > 0) {
+
+					// Add a click event on each of them
+					$navbarBurgers.forEach(function ($el) {
+						$el.addEventListener('click', function () {
+
+							// Get the target from the "data-target" attribute
+							var target = $el.dataset.target;
+							var $target = document.getElementById(target);
+
+							// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+							$el.classList.toggle('is-active');
+							$target.classList.toggle('is-active');
+
+						});
+					});
+				}
+
+			});
+		</script>
+	</body>
+</html>
